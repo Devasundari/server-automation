@@ -1,0 +1,108 @@
+_________________
+Docker monitoring started Tue May 12 08:01:09 UTC 2026:
+Stopped containers detected.
+Restarting container: /myredis
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint myredis (5bf0550e60d0b44a8b8f0f17edbd6bc1e74df3c86ebe20c3d029c5f6f1fe54dc): Bind for 0.0.0.0:6379 failed: port is already allocated
+Error: failed to start containers: 58ee88cf42fb
+Failed to restart: /myredis
+Restarting container: /crazy_jennings
+cdb6e5252aac
+Container restarted successfully: /crazy_jennings
+Restarting container: /location_finder_container
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint location_finder_container (ca014b7667088c9cc88a8d84c8712f9de8625763087328fcef8ec5b61aa282a4): Bind for 0.0.0.0:8080 failed: port is already allocated
+Error: failed to start containers: f6a7c0bff1b6
+Failed to restart: /location_finder_container
+
+Currently running containers:
+CONTAINER ID   IMAGE                               COMMAND                  CREATED         STATUS                  PORTS                                         NAMES
+6d4d41762abb   nginx                               "/docker-entrypoint.…"   2 hours ago     Up 4 minutes            80/tcp                                        nginx-test
+87e60f9a82c6   devasundari/personal-portfolio:v1   "/docker-entrypoint.…"   7 weeks ago     Up 3 minutes            0.0.0.0:8080->80/tcp, [::]:8080->80/tcp       personal-portfolio
+309ae789199c   nginx                               "/docker-entrypoint.…"   7 weeks ago     Up 3 minutes            0.0.0.0:80->8080/tcp, [::]:80->8080/tcp       app1
+516f05189c4d   redis:latest                        "docker-entrypoint.s…"   5 months ago    Up 3 minutes            0.0.0.0:6379->6379/tcp, [::]:6379->6379/tcp   redis-chat
+cdb6e5252aac   opossum-search                      "python app.py"          14 months ago   Up Less than a second                                                 crazy_jennings
+
+Monitoring finished Tue May 12 08:01:10 UTC 2026:
+_________________
+Docker monitoring started Wed May 13 05:10:56 UTC 2026:
+Stopped containers detected.
+Restarting container: /nginx-test
+6d4d41762abb
+Container restarted successfully: /nginx-test
+Restarting container: /personal-portfolio
+87e60f9a82c6
+Container restarted successfully: /personal-portfolio
+Restarting container: /app1
+309ae789199c
+Container restarted successfully: /app1
+Restarting container: /redis-chat
+516f05189c4d
+Container restarted successfully: /redis-chat
+Restarting container: /myredis
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint myredis (f4d05927e5ca9216d001aef7f109ef9b236d7c3c62418c3160a891f6d8aed330): Bind for 0.0.0.0:6379 failed: port is already allocated
+Error: failed to start containers: 58ee88cf42fb
+Failed to restart: /myredis
+Restarting container: /crazy_jennings
+cdb6e5252aac
+Container restarted successfully: /crazy_jennings
+Restarting container: /location_finder_container
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint location_finder_container (ca30ba17ae9c5186b6600f210fa72d9699b6501461af4282c69c6234902c158d): Bind for 0.0.0.0:8080 failed: port is already allocated
+Error: failed to start containers: f6a7c0bff1b6
+Failed to restart: /location_finder_container
+
+Currently running containers:
+CONTAINER ID   IMAGE                               COMMAND                  CREATED         STATUS                  PORTS                                         NAMES
+6d4d41762abb   nginx                               "/docker-entrypoint.…"   23 hours ago    Up 4 seconds            80/tcp                                        nginx-test
+87e60f9a82c6   devasundari/personal-portfolio:v1   "/docker-entrypoint.…"   7 weeks ago     Up 3 seconds            0.0.0.0:8080->80/tcp, [::]:8080->80/tcp       personal-portfolio
+309ae789199c   nginx                               "/docker-entrypoint.…"   7 weeks ago     Up 2 seconds            0.0.0.0:80->8080/tcp, [::]:80->8080/tcp       app1
+516f05189c4d   redis:latest                        "docker-entrypoint.s…"   5 months ago    Up 1 second             0.0.0.0:6379->6379/tcp, [::]:6379->6379/tcp   redis-chat
+cdb6e5252aac   opossum-search                      "python app.py"          14 months ago   Up Less than a second                                                 crazy_jennings
+
+Monitoring finished Wed May 13 05:11:03 UTC 2026:
+_________________
+Docker monitoring started Wed May 13 05:11:29 UTC 2026:
+Stopped containers detected.
+Restarting container: /myredis
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint myredis (c559b1705bc83f258fecf538db9b0276430968608f8fa60b145991fcd4694e17): Bind for 0.0.0.0:6379 failed: port is already allocated
+Error: failed to start containers: 58ee88cf42fb
+Failed to restart: /myredis
+Restarting container: /crazy_jennings
+cdb6e5252aac
+Container restarted successfully: /crazy_jennings
+Restarting container: /location_finder_container
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint location_finder_container (3465a787f8c5b4fd8d9a138c2583223efaa10014b49a1da9b00ecbfffa1c4cb6): Bind for 0.0.0.0:8080 failed: port is already allocated
+Error: failed to start containers: f6a7c0bff1b6
+Failed to restart: /location_finder_container
+
+Currently running containers:
+CONTAINER ID   IMAGE                               COMMAND                  CREATED         STATUS                  PORTS                                         NAMES
+6d4d41762abb   nginx                               "/docker-entrypoint.…"   23 hours ago    Up 32 seconds           80/tcp                                        nginx-test
+87e60f9a82c6   devasundari/personal-portfolio:v1   "/docker-entrypoint.…"   7 weeks ago     Up 31 seconds           0.0.0.0:8080->80/tcp, [::]:8080->80/tcp       personal-portfolio
+309ae789199c   nginx                               "/docker-entrypoint.…"   7 weeks ago     Up 30 seconds           0.0.0.0:80->8080/tcp, [::]:80->8080/tcp       app1
+516f05189c4d   redis:latest                        "docker-entrypoint.s…"   5 months ago    Up 29 seconds           0.0.0.0:6379->6379/tcp, [::]:6379->6379/tcp   redis-chat
+cdb6e5252aac   opossum-search                      "python app.py"          14 months ago   Up Less than a second                                                 crazy_jennings
+
+Monitoring finished Wed May 13 05:11:31 UTC 2026:
+_________________
+Docker monitoring started Wed May 13 05:29:05 UTC 2026:
+Stopped containers detected.
+Restarting container: /myredis
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint myredis (b53ded286551e723792d869f07ae33788ae2870296e7e978572a519ecd7bc41f): Bind for 0.0.0.0:6379 failed: port is already allocated
+Error: failed to start containers: 58ee88cf42fb
+Failed to restart: /myredis
+Restarting container: /crazy_jennings
+cdb6e5252aac
+Container restarted successfully: /crazy_jennings
+Restarting container: /location_finder_container
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint location_finder_container (54e8cafd5ab319e83fe8d0f37b507d09c9b7d21b8c0121f8d9f34501f5b085b3): Bind for 0.0.0.0:8080 failed: port is already allocated
+Error: failed to start containers: f6a7c0bff1b6
+Failed to restart: /location_finder_container
+
+Currently running containers:
+CONTAINER ID   IMAGE                               COMMAND                  CREATED         STATUS                  PORTS                                         NAMES
+6d4d41762abb   nginx                               "/docker-entrypoint.…"   23 hours ago    Up 18 minutes           80/tcp                                        nginx-test
+87e60f9a82c6   devasundari/personal-portfolio:v1   "/docker-entrypoint.…"   7 weeks ago     Up 18 minutes           0.0.0.0:8080->80/tcp, [::]:8080->80/tcp       personal-portfolio
+309ae789199c   nginx                               "/docker-entrypoint.…"   7 weeks ago     Up 18 minutes           0.0.0.0:80->8080/tcp, [::]:80->8080/tcp       app1
+516f05189c4d   redis:latest                        "docker-entrypoint.s…"   5 months ago    Up 18 minutes           0.0.0.0:6379->6379/tcp, [::]:6379->6379/tcp   redis-chat
+cdb6e5252aac   opossum-search                      "python app.py"          14 months ago   Up Less than a second                                                 crazy_jennings
+
+Monitoring finished Wed May 13 05:29:07 UTC 2026:

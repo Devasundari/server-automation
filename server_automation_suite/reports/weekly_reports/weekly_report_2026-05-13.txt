@@ -1,0 +1,27 @@
+======================================
+WEEKLY SYSTEM REPORT
+Generated: Wed May 13 07:56:21 UTC 2026
+======================================
+
+TOTAL WARNINGS THIS WEEK:
+5
+
+TOTAL FAILURES THIS WEEK:
+2
+
+TOTAL SERVICE FAILURES:
+weekly_report.sh:grep -r "NOT RUNNING"  >> $REPORT_FILE
+
+TOTAL DOCKER RESTARTS:
+2
+
+DISK WARNINGS SUMMARY:
+disk_alert.sh:		echo "WARNING: $PARTITION usage is at ${USAGE}%" >> $LOG_FILE
+weekly_report.sh:echo "TOTAL WARNINGS THIS WEEK:" >> $REPORT_FILE
+weekly_report.sh:grep -r "WARNING"  | wc -l >> $REPORT_FILE
+weekly_report.sh:echo "DISK WARNINGS SUMMARY:" >> $REPORT_FILE
+weekly_report.sh:grep -r "WARNING"  >> $REPORT_FILE
+
+======================================
+WEEKLY REPORT COMPLETED
+======================================

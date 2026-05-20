@@ -1,0 +1,270 @@
+________________
+Sever Check started Wed May 13 02:21:21 UTC 2026
+System Update:
+ 02:21:21 up  1:02,  1 user,  load average: 0.10, 0.03, 0.01
+
+Disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+none            1.9G     0  1.9G   0% /usr/lib/modules/5.15.167.4-microsoft-standard-WSL2
+none            1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers         238G  218G   20G  92% /usr/lib/wsl/drivers
+/dev/sdc       1007G  2.8G  953G   1% /
+none            1.9G   92K  1.9G   1% /mnt/wslg
+none            1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs          1.9G  2.4M  1.9G   1% /init
+none            1.9G  504K  1.9G   1% /run
+none            1.9G     0  1.9G   0% /run/lock
+none            1.9G  1.1M  1.9G   1% /run/shm
+tmpfs           4.0M     0  4.0M   0% /sys/fs/cgroup
+none            1.9G   76K  1.9G   1% /mnt/wslg/versions.txt
+none            1.9G   76K  1.9G   1% /mnt/wslg/doc
+C:\             238G  218G   20G  92% /mnt/c
+tmpfs           382M   16K  382M   1% /run/user/1000
+
+CPU & Memory
+top - 02:21:22 up  1:02,  1 user,  load average: 0.10, 0.03, 0.01
+Tasks:  32 total,   1 running,  31 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  2.1 sy,  0.0 ni, 97.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3814.0 total,   3202.1 free,    620.9 used,    217.9 buff/cache     
+MiB Swap:   1024.0 total,   1024.0 free,      0.0 used.   3193.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0   21824  12840   9460 S   0.0   0.3   0:08.81 systemd
+      2 root      20   0    2776   1924   1796 S   0.0   0.0   0:00.63 init-sy+
+      6 root      20   0    2776      4      0 S   0.0   0.0   0:00.00 init
+
+ not Running
+ not Running
+cron is Running
+
+Network check:
+PING google.com (142.251.221.206) 56(84) bytes of data.
+64 bytes from pnmaaa-ba-in-f14.1e100.net (142.251.221.206): icmp_seq=1 ttl=114 time=32.9 ms
+
+--- google.com ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 32.935/32.935/32.935/0.000 ms
+
+Server check finished: Wed May 13 02:21:22 UTC 2026
+_________________________
+
+________________
+Sever Check started Wed May 13 02:23:11 UTC 2026
+System Update:
+ 02:23:11 up  1:04,  2 users,  load average: 1.43, 0.45, 0.15
+
+Disk usage
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      1.9G     0  1.9G   0% /usr/lib/modules/5.15.167.4-microsoft-standard-WSL2
+none                                      1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers                                   238G  219G   19G  93% /usr/lib/wsl/drivers
+/dev/sdc                                 1007G  2.8G  953G   1% /
+none                                      1.9G   92K  1.9G   1% /mnt/wslg
+none                                      1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs                                    1.9G  2.4M  1.9G   1% /init
+none                                      1.9G  536K  1.9G   1% /run
+none                                      1.9G     0  1.9G   0% /run/lock
+none                                      1.9G  1.1M  1.9G   1% /run/shm
+tmpfs                                     4.0M     0  4.0M   0% /sys/fs/cgroup
+none                                      1.9G   76K  1.9G   1% /mnt/wslg/versions.txt
+none                                      1.9G   76K  1.9G   1% /mnt/wslg/doc
+C:\                                       238G  219G   19G  93% /mnt/c
+tmpfs                                     382M   16K  382M   1% /run/user/1000
+none                                      1.9G  652K  1.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdd                                  129M   66M   54M  55% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+/dev/loop0                                690M  690M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tmpfs                                     382M   16K  382M   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  238G  219G   19G  93% /Docker/host
+
+CPU & Memory
+top - 02:23:11 up  1:04,  2 users,  load average: 1.43, 0.45, 0.15
+Tasks:  41 total,   1 running,  40 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  2.2 sy,  0.0 ni, 97.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3814.0 total,   1276.4 free,    923.6 used,   1847.0 buff/cache     
+MiB Swap:   1024.0 total,   1024.0 free,      0.0 used.   2890.4 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    1 root      20   0   21824  12852   9460 S   0.0   0.3   0:09.23 systemd
+    2 root      20   0    2776   1924   1796 S   0.0   0.0   0:00.67 init-syst+
+    6 root      20   0    2776      4      0 S   0.0   0.0   0:00.00 init
+
+ not Running
+ not Running
+cron is Running
+
+Network check:
+PING google.com (142.251.223.14) 56(84) bytes of data.
+64 bytes from lcmaaa-ao-in-f14.1e100.net (142.251.223.14): icmp_seq=1 ttl=113 time=33.7 ms
+
+--- google.com ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 33.741/33.741/33.741/0.000 ms
+
+Server check finished: Wed May 13 02:23:12 UTC 2026
+_________________________
+
+________________
+Sever Check started Wed May 13 05:11:03 UTC 2026
+System Update:
+ 05:11:03 up  2:34,  2 users,  load average: 0.17, 0.04, 0.01
+
+Disk usage
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      1.9G     0  1.9G   0% /usr/lib/modules/5.15.167.4-microsoft-standard-WSL2
+none                                      1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers                                   238G  218G   20G  92% /usr/lib/wsl/drivers
+/dev/sdc                                 1007G  2.8G  953G   1% /
+none                                      1.9G  112K  1.9G   1% /mnt/wslg
+none                                      1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs                                    1.9G  2.4M  1.9G   1% /init
+none                                      1.9G  536K  1.9G   1% /run
+none                                      1.9G     0  1.9G   0% /run/lock
+none                                      1.9G  1.1M  1.9G   1% /run/shm
+tmpfs                                     4.0M     0  4.0M   0% /sys/fs/cgroup
+none                                      1.9G   76K  1.9G   1% /mnt/wslg/versions.txt
+none                                      1.9G   76K  1.9G   1% /mnt/wslg/doc
+C:\                                       238G  218G   20G  92% /mnt/c
+tmpfs                                     382M   16K  382M   1% /run/user/1000
+none                                      1.9G  652K  1.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdd                                  129M   66M   54M  55% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+/dev/loop0                                690M  690M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tmpfs                                     382M   16K  382M   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  238G  218G   20G  92% /Docker/host
+
+CPU & Memory
+top - 05:11:03 up  2:34,  2 users,  load average: 0.39, 0.09, 0.03
+Tasks:  47 total,   1 running,  46 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.3 us,  3.2 sy,  0.0 ni, 86.0 id,  5.4 wa,  0.0 hi,  1.1 si,  0.0 st 
+MiB Mem :   3814.0 total,   2387.4 free,   1022.9 used,    638.0 buff/cache     
+MiB Swap:   1024.0 total,   1024.0 free,      0.0 used.   2791.1 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    1 root      20   0   21824  12852   9460 S   0.0   0.3   0:09.69 systemd
+    2 root      20   0    2776   1924   1796 S   0.0   0.0   0:00.67 init-syst+
+    6 root      20   0    2776      4      0 S   0.0   0.0   0:00.00 init
+
+ not Running
+ not Running
+cron is Running
+
+Network check:
+PING google.com (142.251.222.142) 56(84) bytes of data.
+64 bytes from pnmaaa-az-in-f14.1e100.net (142.251.222.142): icmp_seq=1 ttl=113 time=40.2 ms
+
+--- google.com ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 40.227/40.227/40.227/0.000 ms
+
+Server check finished: Wed May 13 05:11:03 UTC 2026
+_________________________
+
+________________
+Sever Check started Wed May 13 05:11:31 UTC 2026
+System Update:
+ 05:11:31 up  2:34,  2 users,  load average: 0.26, 0.08, 0.02
+
+Disk usage
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      1.9G     0  1.9G   0% /usr/lib/modules/5.15.167.4-microsoft-standard-WSL2
+none                                      1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers                                   238G  218G   20G  92% /usr/lib/wsl/drivers
+/dev/sdc                                 1007G  2.8G  953G   1% /
+none                                      1.9G  112K  1.9G   1% /mnt/wslg
+none                                      1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs                                    1.9G  2.4M  1.9G   1% /init
+none                                      1.9G  536K  1.9G   1% /run
+none                                      1.9G     0  1.9G   0% /run/lock
+none                                      1.9G  1.1M  1.9G   1% /run/shm
+tmpfs                                     4.0M     0  4.0M   0% /sys/fs/cgroup
+none                                      1.9G   76K  1.9G   1% /mnt/wslg/versions.txt
+none                                      1.9G   76K  1.9G   1% /mnt/wslg/doc
+C:\                                       238G  218G   20G  92% /mnt/c
+tmpfs                                     382M   16K  382M   1% /run/user/1000
+none                                      1.9G  652K  1.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdd                                  129M   66M   54M  55% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+/dev/loop0                                690M  690M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tmpfs                                     382M   16K  382M   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  238G  218G   20G  92% /Docker/host
+
+CPU & Memory
+top - 05:11:31 up  2:34,  2 users,  load average: 0.26, 0.08, 0.02
+Tasks:  42 total,   1 running,  41 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 12.6 us,  0.0 sy,  0.0 ni, 81.6 id,  0.0 wa,  0.0 hi,  5.7 si,  0.0 st 
+MiB Mem :   3814.0 total,   2350.2 free,   1040.6 used,    658.0 buff/cache     
+MiB Swap:   1024.0 total,   1024.0 free,      0.0 used.   2773.4 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    1 root      20   0   21824  12852   9460 S   0.0   0.3   0:09.71 systemd
+    2 root      20   0    2776   1924   1796 S   0.0   0.0   0:00.67 init-syst+
+    6 root      20   0    2776      4      0 S   0.0   0.0   0:00.00 init
+
+ not Running
+ not Running
+cron is Running
+
+Network check:
+PING google.com (142.251.222.142) 56(84) bytes of data.
+64 bytes from pnmaaa-az-in-f14.1e100.net (142.251.222.142): icmp_seq=1 ttl=113 time=47.1 ms
+
+--- google.com ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 47.089/47.089/47.089/0.000 ms
+
+Server check finished: Wed May 13 05:11:31 UTC 2026
+_________________________
+
+________________
+Sever Check started Wed May 13 05:29:07 UTC 2026
+System Update:
+ 05:29:07 up  2:52,  2 users,  load average: 0.04, 0.03, 0.00
+
+Disk usage
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      1.9G     0  1.9G   0% /usr/lib/modules/5.15.167.4-microsoft-standard-WSL2
+none                                      1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers                                   238G  218G   20G  92% /usr/lib/wsl/drivers
+/dev/sdc                                 1007G  2.8G  953G   1% /
+none                                      1.9G  112K  1.9G   1% /mnt/wslg
+none                                      1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs                                    1.9G  2.4M  1.9G   1% /init
+none                                      1.9G  536K  1.9G   1% /run
+none                                      1.9G     0  1.9G   0% /run/lock
+none                                      1.9G  1.1M  1.9G   1% /run/shm
+tmpfs                                     4.0M     0  4.0M   0% /sys/fs/cgroup
+none                                      1.9G   76K  1.9G   1% /mnt/wslg/versions.txt
+none                                      1.9G   76K  1.9G   1% /mnt/wslg/doc
+C:\                                       238G  218G   20G  92% /mnt/c
+tmpfs                                     382M   16K  382M   1% /run/user/1000
+none                                      1.9G  652K  1.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdd                                  129M   66M   54M  55% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+/dev/loop0                                690M  690M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tmpfs                                     382M   16K  382M   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  238G  218G   20G  92% /Docker/host
+
+CPU & Memory
+top - 05:29:07 up  2:52,  2 users,  load average: 0.04, 0.03, 0.00
+Tasks:  42 total,   1 running,  41 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  8.4 us,  1.2 sy,  0.0 ni, 86.7 id,  3.6 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3814.0 total,   2382.4 free,   1043.6 used,    622.5 buff/cache     
+MiB Swap:   1024.0 total,   1024.0 free,      0.0 used.   2770.4 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    1 root      20   0   21824  12852   9460 S   0.0   0.3   0:09.80 systemd
+    2 root      20   0    2776   1924   1796 S   0.0   0.0   0:00.67 init-syst+
+    6 root      20   0    2776      4      0 S   0.0   0.0   0:00.00 init
+
+ not Running
+ not Running
+cron is Running
+
+Network check:
+PING google.com (142.251.222.142) 56(84) bytes of data.
+64 bytes from pnmaaa-az-in-f14.1e100.net (142.251.222.142): icmp_seq=1 ttl=113 time=35.4 ms
+
+--- google.com ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 35.409/35.409/35.409/0.000 ms
+
+Server check finished: Wed May 13 05:29:08 UTC 2026
+_________________________
+

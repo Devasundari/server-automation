@@ -1,0 +1,25 @@
+# =====================================
+# SERVER AUTOMATION SUITE CRON JOBS
+# =====================================
+
+# Run master monitoring every hour
+0 * * * * /home/$USER/server_automation_suite/scripts/health_check.sh
+
+# Run backup every day at 1 AM
+0 1 * * * /home/$USER/server_automation_suite/scripts/backup.sh
+
+# Run log cleanup every day at 2 AM
+0 2 * * * /home/$USER/server_automation_suite/scripts/log_cleanup.sh
+
+# Run disk monitoring every 30 minutes
+*/30 * * * * /home/$USER/server_automation_suite/scripts/disk_alert.sh
+
+# Run Docker monitoring every 15 minutes
+*/15 * * * * /home/$USER/server_automation_suite/scripts/docker_monitor.sh
+
+# Run server checker every 10 minutes
+*/10 * * * * /home/$USER/server_automation_suite/scripts/server_checker.sh
+
+# Generate weekly report every Sunday at 10 PM
+0 22 * * 0 /home/$USER/server_automation_suite/scripts/weekly_report.sh
+

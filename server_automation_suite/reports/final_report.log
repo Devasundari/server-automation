@@ -1,0 +1,482 @@
+======================================
+SYSTEM REPORT
+Generated: Wed May 13 05:29:05 UTC 2026
+======================================
+
+Running backup.sh...
+Running log_cleanup.sh...
+Running docker_monitor.sh...
+Running server_checker.sh...
+Running disk_alert.sh...
+
+========== BACKUP LOG ==========
+======================================
+Backup Started: Tue May 12 02:19:19 UTC 2026
+Backup Successful: BACKUP-2026-05-12-02-19-19.tar.gz
+Old backups cleaned.
+Backup Finished: Tue May 12 02:19:19 UTC 2026
+======================================
+
+======================================
+Backup Started: Tue May 12 02:21:11 UTC 2026
+Backup Successful: BACKUP-2026-05-12-02-21-11.tar.gz
+Old backups cleaned.
+Backup Finished: Tue May 12 02:21:11 UTC 2026
+======================================
+
+======================================
+Backup Started: Tue May 12 02:26:43 UTC 2026
+ERROR: Source directory does not exist!
+======================================
+Backup Started: Wed May 13 05:10:56 UTC 2026
+ERROR: Source directory does not exist!
+======================================
+Backup Started: Wed May 13 05:11:29 UTC 2026
+ERROR: Source directory does not exist!
+======================================
+Backup Started: Wed May 13 05:29:05 UTC 2026
+ERROR: Source directory does not exist!
+
+========== CLEANUP LOG ==========
+___________________
+Cleanup Started Tue May 12 03:46:26 UTC 2026
+No old logs found
+Cleanup finished
+______________________________
+___________________
+Cleanup Started Tue May 12 03:47:57 UTC 2026
+Deleting old log files:
+/home/deva29/Devops/server_automation_suite/logs/od.log
+Old log files deleted successfully!
+Cleanup finished
+______________________________
+___________________
+Cleanup Started Wed May 13 05:10:56 UTC 2026
+No old logs found
+Cleanup finished
+______________________________
+___________________
+Cleanup Started Wed May 13 05:11:29 UTC 2026
+No old logs found
+Cleanup finished
+______________________________
+___________________
+Cleanup Started Wed May 13 05:29:05 UTC 2026
+No old logs found
+Cleanup finished
+______________________________
+
+========== DOCKER LOG ==========
+_________________
+Docker monitoring started Tue May 12 08:01:09 UTC 2026:
+Stopped containers detected.
+Restarting container: /myredis
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint myredis (5bf0550e60d0b44a8b8f0f17edbd6bc1e74df3c86ebe20c3d029c5f6f1fe54dc): Bind for 0.0.0.0:6379 failed: port is already allocated
+Error: failed to start containers: 58ee88cf42fb
+Failed to restart: /myredis
+Restarting container: /crazy_jennings
+cdb6e5252aac
+Container restarted successfully: /crazy_jennings
+Restarting container: /location_finder_container
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint location_finder_container (ca014b7667088c9cc88a8d84c8712f9de8625763087328fcef8ec5b61aa282a4): Bind for 0.0.0.0:8080 failed: port is already allocated
+Error: failed to start containers: f6a7c0bff1b6
+Failed to restart: /location_finder_container
+
+Currently running containers:
+CONTAINER ID   IMAGE                               COMMAND                  CREATED         STATUS                  PORTS                                         NAMES
+6d4d41762abb   nginx                               "/docker-entrypoint.…"   2 hours ago     Up 4 minutes            80/tcp                                        nginx-test
+87e60f9a82c6   devasundari/personal-portfolio:v1   "/docker-entrypoint.…"   7 weeks ago     Up 3 minutes            0.0.0.0:8080->80/tcp, [::]:8080->80/tcp       personal-portfolio
+309ae789199c   nginx                               "/docker-entrypoint.…"   7 weeks ago     Up 3 minutes            0.0.0.0:80->8080/tcp, [::]:80->8080/tcp       app1
+516f05189c4d   redis:latest                        "docker-entrypoint.s…"   5 months ago    Up 3 minutes            0.0.0.0:6379->6379/tcp, [::]:6379->6379/tcp   redis-chat
+cdb6e5252aac   opossum-search                      "python app.py"          14 months ago   Up Less than a second                                                 crazy_jennings
+
+Monitoring finished Tue May 12 08:01:10 UTC 2026:
+_________________
+Docker monitoring started Wed May 13 05:10:56 UTC 2026:
+Stopped containers detected.
+Restarting container: /nginx-test
+6d4d41762abb
+Container restarted successfully: /nginx-test
+Restarting container: /personal-portfolio
+87e60f9a82c6
+Container restarted successfully: /personal-portfolio
+Restarting container: /app1
+309ae789199c
+Container restarted successfully: /app1
+Restarting container: /redis-chat
+516f05189c4d
+Container restarted successfully: /redis-chat
+Restarting container: /myredis
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint myredis (f4d05927e5ca9216d001aef7f109ef9b236d7c3c62418c3160a891f6d8aed330): Bind for 0.0.0.0:6379 failed: port is already allocated
+Error: failed to start containers: 58ee88cf42fb
+Failed to restart: /myredis
+Restarting container: /crazy_jennings
+cdb6e5252aac
+Container restarted successfully: /crazy_jennings
+Restarting container: /location_finder_container
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint location_finder_container (ca30ba17ae9c5186b6600f210fa72d9699b6501461af4282c69c6234902c158d): Bind for 0.0.0.0:8080 failed: port is already allocated
+Error: failed to start containers: f6a7c0bff1b6
+Failed to restart: /location_finder_container
+
+Currently running containers:
+CONTAINER ID   IMAGE                               COMMAND                  CREATED         STATUS                  PORTS                                         NAMES
+6d4d41762abb   nginx                               "/docker-entrypoint.…"   23 hours ago    Up 4 seconds            80/tcp                                        nginx-test
+87e60f9a82c6   devasundari/personal-portfolio:v1   "/docker-entrypoint.…"   7 weeks ago     Up 3 seconds            0.0.0.0:8080->80/tcp, [::]:8080->80/tcp       personal-portfolio
+309ae789199c   nginx                               "/docker-entrypoint.…"   7 weeks ago     Up 2 seconds            0.0.0.0:80->8080/tcp, [::]:80->8080/tcp       app1
+516f05189c4d   redis:latest                        "docker-entrypoint.s…"   5 months ago    Up 1 second             0.0.0.0:6379->6379/tcp, [::]:6379->6379/tcp   redis-chat
+cdb6e5252aac   opossum-search                      "python app.py"          14 months ago   Up Less than a second                                                 crazy_jennings
+
+Monitoring finished Wed May 13 05:11:03 UTC 2026:
+_________________
+Docker monitoring started Wed May 13 05:11:29 UTC 2026:
+Stopped containers detected.
+Restarting container: /myredis
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint myredis (c559b1705bc83f258fecf538db9b0276430968608f8fa60b145991fcd4694e17): Bind for 0.0.0.0:6379 failed: port is already allocated
+Error: failed to start containers: 58ee88cf42fb
+Failed to restart: /myredis
+Restarting container: /crazy_jennings
+cdb6e5252aac
+Container restarted successfully: /crazy_jennings
+Restarting container: /location_finder_container
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint location_finder_container (3465a787f8c5b4fd8d9a138c2583223efaa10014b49a1da9b00ecbfffa1c4cb6): Bind for 0.0.0.0:8080 failed: port is already allocated
+Error: failed to start containers: f6a7c0bff1b6
+Failed to restart: /location_finder_container
+
+Currently running containers:
+CONTAINER ID   IMAGE                               COMMAND                  CREATED         STATUS                  PORTS                                         NAMES
+6d4d41762abb   nginx                               "/docker-entrypoint.…"   23 hours ago    Up 32 seconds           80/tcp                                        nginx-test
+87e60f9a82c6   devasundari/personal-portfolio:v1   "/docker-entrypoint.…"   7 weeks ago     Up 31 seconds           0.0.0.0:8080->80/tcp, [::]:8080->80/tcp       personal-portfolio
+309ae789199c   nginx                               "/docker-entrypoint.…"   7 weeks ago     Up 30 seconds           0.0.0.0:80->8080/tcp, [::]:80->8080/tcp       app1
+516f05189c4d   redis:latest                        "docker-entrypoint.s…"   5 months ago    Up 29 seconds           0.0.0.0:6379->6379/tcp, [::]:6379->6379/tcp   redis-chat
+cdb6e5252aac   opossum-search                      "python app.py"          14 months ago   Up Less than a second                                                 crazy_jennings
+
+Monitoring finished Wed May 13 05:11:31 UTC 2026:
+_________________
+Docker monitoring started Wed May 13 05:29:05 UTC 2026:
+Stopped containers detected.
+Restarting container: /myredis
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint myredis (b53ded286551e723792d869f07ae33788ae2870296e7e978572a519ecd7bc41f): Bind for 0.0.0.0:6379 failed: port is already allocated
+Error: failed to start containers: 58ee88cf42fb
+Failed to restart: /myredis
+Restarting container: /crazy_jennings
+cdb6e5252aac
+Container restarted successfully: /crazy_jennings
+Restarting container: /location_finder_container
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint location_finder_container (54e8cafd5ab319e83fe8d0f37b507d09c9b7d21b8c0121f8d9f34501f5b085b3): Bind for 0.0.0.0:8080 failed: port is already allocated
+Error: failed to start containers: f6a7c0bff1b6
+Failed to restart: /location_finder_container
+
+Currently running containers:
+CONTAINER ID   IMAGE                               COMMAND                  CREATED         STATUS                  PORTS                                         NAMES
+6d4d41762abb   nginx                               "/docker-entrypoint.…"   23 hours ago    Up 18 minutes           80/tcp                                        nginx-test
+87e60f9a82c6   devasundari/personal-portfolio:v1   "/docker-entrypoint.…"   7 weeks ago     Up 18 minutes           0.0.0.0:8080->80/tcp, [::]:8080->80/tcp       personal-portfolio
+309ae789199c   nginx                               "/docker-entrypoint.…"   7 weeks ago     Up 18 minutes           0.0.0.0:80->8080/tcp, [::]:80->8080/tcp       app1
+516f05189c4d   redis:latest                        "docker-entrypoint.s…"   5 months ago    Up 18 minutes           0.0.0.0:6379->6379/tcp, [::]:6379->6379/tcp   redis-chat
+cdb6e5252aac   opossum-search                      "python app.py"          14 months ago   Up Less than a second                                                 crazy_jennings
+
+Monitoring finished Wed May 13 05:29:07 UTC 2026:
+
+========== SERVER CHECK LOG ==========
+________________
+Sever Check started Wed May 13 02:21:21 UTC 2026
+System Update:
+ 02:21:21 up  1:02,  1 user,  load average: 0.10, 0.03, 0.01
+
+Disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+none            1.9G     0  1.9G   0% /usr/lib/modules/5.15.167.4-microsoft-standard-WSL2
+none            1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers         238G  218G   20G  92% /usr/lib/wsl/drivers
+/dev/sdc       1007G  2.8G  953G   1% /
+none            1.9G   92K  1.9G   1% /mnt/wslg
+none            1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs          1.9G  2.4M  1.9G   1% /init
+none            1.9G  504K  1.9G   1% /run
+none            1.9G     0  1.9G   0% /run/lock
+none            1.9G  1.1M  1.9G   1% /run/shm
+tmpfs           4.0M     0  4.0M   0% /sys/fs/cgroup
+none            1.9G   76K  1.9G   1% /mnt/wslg/versions.txt
+none            1.9G   76K  1.9G   1% /mnt/wslg/doc
+C:\             238G  218G   20G  92% /mnt/c
+tmpfs           382M   16K  382M   1% /run/user/1000
+
+CPU & Memory
+top - 02:21:22 up  1:02,  1 user,  load average: 0.10, 0.03, 0.01
+Tasks:  32 total,   1 running,  31 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  2.1 sy,  0.0 ni, 97.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3814.0 total,   3202.1 free,    620.9 used,    217.9 buff/cache     
+MiB Swap:   1024.0 total,   1024.0 free,      0.0 used.   3193.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0   21824  12840   9460 S   0.0   0.3   0:08.81 systemd
+      2 root      20   0    2776   1924   1796 S   0.0   0.0   0:00.63 init-sy+
+      6 root      20   0    2776      4      0 S   0.0   0.0   0:00.00 init
+
+ not Running
+ not Running
+cron is Running
+
+Network check:
+PING google.com (142.251.221.206) 56(84) bytes of data.
+64 bytes from pnmaaa-ba-in-f14.1e100.net (142.251.221.206): icmp_seq=1 ttl=114 time=32.9 ms
+
+--- google.com ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 32.935/32.935/32.935/0.000 ms
+
+Server check finished: Wed May 13 02:21:22 UTC 2026
+_________________________
+
+________________
+Sever Check started Wed May 13 02:23:11 UTC 2026
+System Update:
+ 02:23:11 up  1:04,  2 users,  load average: 1.43, 0.45, 0.15
+
+Disk usage
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      1.9G     0  1.9G   0% /usr/lib/modules/5.15.167.4-microsoft-standard-WSL2
+none                                      1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers                                   238G  219G   19G  93% /usr/lib/wsl/drivers
+/dev/sdc                                 1007G  2.8G  953G   1% /
+none                                      1.9G   92K  1.9G   1% /mnt/wslg
+none                                      1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs                                    1.9G  2.4M  1.9G   1% /init
+none                                      1.9G  536K  1.9G   1% /run
+none                                      1.9G     0  1.9G   0% /run/lock
+none                                      1.9G  1.1M  1.9G   1% /run/shm
+tmpfs                                     4.0M     0  4.0M   0% /sys/fs/cgroup
+none                                      1.9G   76K  1.9G   1% /mnt/wslg/versions.txt
+none                                      1.9G   76K  1.9G   1% /mnt/wslg/doc
+C:\                                       238G  219G   19G  93% /mnt/c
+tmpfs                                     382M   16K  382M   1% /run/user/1000
+none                                      1.9G  652K  1.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdd                                  129M   66M   54M  55% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+/dev/loop0                                690M  690M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tmpfs                                     382M   16K  382M   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  238G  219G   19G  93% /Docker/host
+
+CPU & Memory
+top - 02:23:11 up  1:04,  2 users,  load average: 1.43, 0.45, 0.15
+Tasks:  41 total,   1 running,  40 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  2.2 sy,  0.0 ni, 97.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3814.0 total,   1276.4 free,    923.6 used,   1847.0 buff/cache     
+MiB Swap:   1024.0 total,   1024.0 free,      0.0 used.   2890.4 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    1 root      20   0   21824  12852   9460 S   0.0   0.3   0:09.23 systemd
+    2 root      20   0    2776   1924   1796 S   0.0   0.0   0:00.67 init-syst+
+    6 root      20   0    2776      4      0 S   0.0   0.0   0:00.00 init
+
+ not Running
+ not Running
+cron is Running
+
+Network check:
+PING google.com (142.251.223.14) 56(84) bytes of data.
+64 bytes from lcmaaa-ao-in-f14.1e100.net (142.251.223.14): icmp_seq=1 ttl=113 time=33.7 ms
+
+--- google.com ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 33.741/33.741/33.741/0.000 ms
+
+Server check finished: Wed May 13 02:23:12 UTC 2026
+_________________________
+
+________________
+Sever Check started Wed May 13 05:11:03 UTC 2026
+System Update:
+ 05:11:03 up  2:34,  2 users,  load average: 0.17, 0.04, 0.01
+
+Disk usage
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      1.9G     0  1.9G   0% /usr/lib/modules/5.15.167.4-microsoft-standard-WSL2
+none                                      1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers                                   238G  218G   20G  92% /usr/lib/wsl/drivers
+/dev/sdc                                 1007G  2.8G  953G   1% /
+none                                      1.9G  112K  1.9G   1% /mnt/wslg
+none                                      1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs                                    1.9G  2.4M  1.9G   1% /init
+none                                      1.9G  536K  1.9G   1% /run
+none                                      1.9G     0  1.9G   0% /run/lock
+none                                      1.9G  1.1M  1.9G   1% /run/shm
+tmpfs                                     4.0M     0  4.0M   0% /sys/fs/cgroup
+none                                      1.9G   76K  1.9G   1% /mnt/wslg/versions.txt
+none                                      1.9G   76K  1.9G   1% /mnt/wslg/doc
+C:\                                       238G  218G   20G  92% /mnt/c
+tmpfs                                     382M   16K  382M   1% /run/user/1000
+none                                      1.9G  652K  1.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdd                                  129M   66M   54M  55% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+/dev/loop0                                690M  690M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tmpfs                                     382M   16K  382M   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  238G  218G   20G  92% /Docker/host
+
+CPU & Memory
+top - 05:11:03 up  2:34,  2 users,  load average: 0.39, 0.09, 0.03
+Tasks:  47 total,   1 running,  46 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.3 us,  3.2 sy,  0.0 ni, 86.0 id,  5.4 wa,  0.0 hi,  1.1 si,  0.0 st 
+MiB Mem :   3814.0 total,   2387.4 free,   1022.9 used,    638.0 buff/cache     
+MiB Swap:   1024.0 total,   1024.0 free,      0.0 used.   2791.1 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    1 root      20   0   21824  12852   9460 S   0.0   0.3   0:09.69 systemd
+    2 root      20   0    2776   1924   1796 S   0.0   0.0   0:00.67 init-syst+
+    6 root      20   0    2776      4      0 S   0.0   0.0   0:00.00 init
+
+ not Running
+ not Running
+cron is Running
+
+Network check:
+PING google.com (142.251.222.142) 56(84) bytes of data.
+64 bytes from pnmaaa-az-in-f14.1e100.net (142.251.222.142): icmp_seq=1 ttl=113 time=40.2 ms
+
+--- google.com ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 40.227/40.227/40.227/0.000 ms
+
+Server check finished: Wed May 13 05:11:03 UTC 2026
+_________________________
+
+________________
+Sever Check started Wed May 13 05:11:31 UTC 2026
+System Update:
+ 05:11:31 up  2:34,  2 users,  load average: 0.26, 0.08, 0.02
+
+Disk usage
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      1.9G     0  1.9G   0% /usr/lib/modules/5.15.167.4-microsoft-standard-WSL2
+none                                      1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers                                   238G  218G   20G  92% /usr/lib/wsl/drivers
+/dev/sdc                                 1007G  2.8G  953G   1% /
+none                                      1.9G  112K  1.9G   1% /mnt/wslg
+none                                      1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs                                    1.9G  2.4M  1.9G   1% /init
+none                                      1.9G  536K  1.9G   1% /run
+none                                      1.9G     0  1.9G   0% /run/lock
+none                                      1.9G  1.1M  1.9G   1% /run/shm
+tmpfs                                     4.0M     0  4.0M   0% /sys/fs/cgroup
+none                                      1.9G   76K  1.9G   1% /mnt/wslg/versions.txt
+none                                      1.9G   76K  1.9G   1% /mnt/wslg/doc
+C:\                                       238G  218G   20G  92% /mnt/c
+tmpfs                                     382M   16K  382M   1% /run/user/1000
+none                                      1.9G  652K  1.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdd                                  129M   66M   54M  55% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+/dev/loop0                                690M  690M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tmpfs                                     382M   16K  382M   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  238G  218G   20G  92% /Docker/host
+
+CPU & Memory
+top - 05:11:31 up  2:34,  2 users,  load average: 0.26, 0.08, 0.02
+Tasks:  42 total,   1 running,  41 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 12.6 us,  0.0 sy,  0.0 ni, 81.6 id,  0.0 wa,  0.0 hi,  5.7 si,  0.0 st 
+MiB Mem :   3814.0 total,   2350.2 free,   1040.6 used,    658.0 buff/cache     
+MiB Swap:   1024.0 total,   1024.0 free,      0.0 used.   2773.4 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    1 root      20   0   21824  12852   9460 S   0.0   0.3   0:09.71 systemd
+    2 root      20   0    2776   1924   1796 S   0.0   0.0   0:00.67 init-syst+
+    6 root      20   0    2776      4      0 S   0.0   0.0   0:00.00 init
+
+ not Running
+ not Running
+cron is Running
+
+Network check:
+PING google.com (142.251.222.142) 56(84) bytes of data.
+64 bytes from pnmaaa-az-in-f14.1e100.net (142.251.222.142): icmp_seq=1 ttl=113 time=47.1 ms
+
+--- google.com ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 47.089/47.089/47.089/0.000 ms
+
+Server check finished: Wed May 13 05:11:31 UTC 2026
+_________________________
+
+________________
+Sever Check started Wed May 13 05:29:07 UTC 2026
+System Update:
+ 05:29:07 up  2:52,  2 users,  load average: 0.04, 0.03, 0.00
+
+Disk usage
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      1.9G     0  1.9G   0% /usr/lib/modules/5.15.167.4-microsoft-standard-WSL2
+none                                      1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers                                   238G  218G   20G  92% /usr/lib/wsl/drivers
+/dev/sdc                                 1007G  2.8G  953G   1% /
+none                                      1.9G  112K  1.9G   1% /mnt/wslg
+none                                      1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs                                    1.9G  2.4M  1.9G   1% /init
+none                                      1.9G  536K  1.9G   1% /run
+none                                      1.9G     0  1.9G   0% /run/lock
+none                                      1.9G  1.1M  1.9G   1% /run/shm
+tmpfs                                     4.0M     0  4.0M   0% /sys/fs/cgroup
+none                                      1.9G   76K  1.9G   1% /mnt/wslg/versions.txt
+none                                      1.9G   76K  1.9G   1% /mnt/wslg/doc
+C:\                                       238G  218G   20G  92% /mnt/c
+tmpfs                                     382M   16K  382M   1% /run/user/1000
+none                                      1.9G  652K  1.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdd                                  129M   66M   54M  55% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+/dev/loop0                                690M  690M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tmpfs                                     382M   16K  382M   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  238G  218G   20G  92% /Docker/host
+
+CPU & Memory
+top - 05:29:07 up  2:52,  2 users,  load average: 0.04, 0.03, 0.00
+Tasks:  42 total,   1 running,  41 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  8.4 us,  1.2 sy,  0.0 ni, 86.7 id,  3.6 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3814.0 total,   2382.4 free,   1043.6 used,    622.5 buff/cache     
+MiB Swap:   1024.0 total,   1024.0 free,      0.0 used.   2770.4 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    1 root      20   0   21824  12852   9460 S   0.0   0.3   0:09.80 systemd
+    2 root      20   0    2776   1924   1796 S   0.0   0.0   0:00.67 init-syst+
+    6 root      20   0    2776      4      0 S   0.0   0.0   0:00.00 init
+
+ not Running
+ not Running
+cron is Running
+
+Network check:
+PING google.com (142.251.222.142) 56(84) bytes of data.
+64 bytes from pnmaaa-az-in-f14.1e100.net (142.251.222.142): icmp_seq=1 ttl=113 time=35.4 ms
+
+--- google.com ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 35.409/35.409/35.409/0.000 ms
+
+Server check finished: Wed May 13 05:29:08 UTC 2026
+_________________________
+
+
+========== DISK ALERT LOG ==========
+Disk Monitoring started Wed May 13 02:51:43 UTC 2026:
+/dev/sdc usage is healthy at 1%
+/dev/sdd usage is healthy at 55%
+WARNING: /dev/loop0 usage is at 100%
+Disk monitoring finished: Wed May 13 02:51:43 UTC 2026
+____________________
+______________________
+Disk Monitoring started Wed May 13 05:11:03 UTC 2026:
+/dev/sdc usage is healthy at 1%
+/dev/sdd usage is healthy at 55%
+WARNING: /dev/loop0 usage is at 100%
+Disk monitoring finished: Wed May 13 05:11:03 UTC 2026
+____________________
+______________________
+Disk Monitoring started Wed May 13 05:11:31 UTC 2026:
+/dev/sdc usage is healthy at 1%
+/dev/sdd usage is healthy at 55%
+WARNING: /dev/loop0 usage is at 100%
+Disk monitoring finished: Wed May 13 05:11:31 UTC 2026
+____________________
+______________________
+Disk Monitoring started Wed May 13 05:29:08 UTC 2026:
+/dev/sdc usage is healthy at 1%
+/dev/sdd usage is healthy at 55%
+WARNING: /dev/loop0 usage is at 100%
+Disk monitoring finished: Wed May 13 05:29:08 UTC 2026
+____________________
+
+======================================
+MASTER REPORT COMPLETED: Wed May 13 05:29:08 UTC 2026
+======================================
